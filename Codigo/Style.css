@@ -1,50 +1,102 @@
-body{
-    min-height: 100%;
-    background: #FEEBF1;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0%;
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #FEEBF1;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: #ECA2BB;
-    text-decoration: none;
-    transition: 0.3s;
-  }
+  color: #ECA2BB;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-  .nav-list a:hover {
-    color: #000;
+.nav-list a:hover {
+  color: #000;
+}
 
-  }
+nav {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os elementos da esquerda e da direita */
+  align-items: center;
+  background-color: #fff;
+  height: 9vh;
+  border-radius: 0px 0px 25px 25px;
+  width: 100%;
+  margin: 0; /* Remover margem */
+  padding: 0; /* Remover padding */
+  position: fixed; /* Fixar no topo */
+  top: 0; /* Garantir que fique no topo */
+}
 
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-esquerdo,
+.nav-direito {
+  display: flex; /* Organizar os itens horizontalmente */
+  list-style: none;
+}
+
+.nav-esquerdo li,
+.nav-direito li {
+  padding: 0 150px;
+}
+
+.logo-cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Tamanho do logo */
+}
+
+header {
+  background-image: url(/Codigo/Imagem/Bolo.png);
+  background-size: cover; /* Adicionado para cobrir toda a área */
+  background-position: center; /* Adicionado para centralizar a imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  /* Ajuste do navbar para telas menores */
   nav {
-    display: flex;
-    justify-content: center; /* Espalha os itens para as extremidades */
-    align-items: center;
-    background-color: #fff;
-    height: 9vh;
-    border-radius: 0px 0px 25px 25px;
-    /* padding: 0 50px; Espaçamento interno */
-}
-
-.nav-esquerdo, .nav-direito {
-    display: flex;
-}
-
-  main {
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
+      flex-direction: column;
+      height: auto;
   }
 
   .nav-list {
-    list-style: none;
-    display: flex;
-}
-
-  .nav-list li {
-    letter-spacing: 5px;
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
   }
 
+  .nav-list li {
+      padding: 10px 0;
+  }
+
+  .nav-esquerdo, .nav-direito {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  header {
+      flex-direction: column;
+  }
+
+  .logo-cabecalho {
+      margin-bottom: 20px;
+  }
+}
