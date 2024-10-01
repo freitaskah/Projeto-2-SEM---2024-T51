@@ -21,16 +21,16 @@ a {
 
 nav {
   display: flex;
-  justify-content: space-between; /* Espaço entre os elementos da esquerda e da direita */
+  justify-content: space-between;
   align-items: center;
   background-color: #fff;
   height: 9vh;
   border-radius: 0px 0px 25px 25px;
   width: 100%;
-  margin: 0; /* Remover margem */
-  padding: 0; /* Remover padding */
-  position: fixed; /* Fixar no topo */
-  top: 0; /* Garantir que fique no topo */
+  margin: 0;
+  padding: 0; 
+  position: fixed; 
+  top: 0; 
 }
 
 .nav-list {
@@ -41,7 +41,7 @@ nav {
 
 .nav-esquerdo,
 .nav-direito {
-  display: flex; /* Organizar os itens horizontalmente */
+  display: flex;
   list-style: none;
 }
 
@@ -62,8 +62,8 @@ nav {
 
 header {
   background-image: url(/Codigo/Imagem/Bolo.png);
-  background-size: cover; /* Adicionado para cobrir toda a área */
-  background-position: center; /* Adicionado para centralizar a imagem */
+  background-size: cover; 
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,6 @@ header {
 }
 
 @media (max-width: 768px) {
-  /* Ajuste do navbar para telas menores */
   nav {
       flex-direction: column;
       height: auto;
