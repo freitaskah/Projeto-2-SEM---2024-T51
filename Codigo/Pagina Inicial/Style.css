@@ -61,7 +61,7 @@ nav {
 }
 
 header {
-  background-image: url(/Codigo/Imagem/Bolo.png);
+  background-image: url(Imagem/Bolo.png);
   background-size: cover; 
   background-position: center;
   display: flex;

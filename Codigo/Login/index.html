@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Codigo/Login/signup.css">
-    <title>Projeto bolo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>A&L Cakes</title>
 </head>
 <body>
-    
-    <div class="container">
-        <form>
-            <h1>Faça seu Login</h1>
-            <div class="input-container">
-                <input placeholder="Email" type="email" required>
-                <img width="20" height="20" src="img/email.png">
-            </div>
 
-            <div class="input-container">
-                <input placeholder="Senha" type="password" required>
-                <img width="20" height="20" src="img/cadeado.png">
-                <a href="#">Esqueci Minha Senha</a>
-            </div>
-            <button type="submit" class="submit-button" >Entrar</button>
+        <div class="tela"></div>
 
-            <div class="register-link">
-                <p>Não está cadastrado ? <a href="signup.html">Cadastrar</a></p>
-            </div>
+        <div class="logo">   
+            <img src="img/logo-png.png" alt="">
+        </div>
+        <br>
+        <br>
 
-        </form>
+        <div class="container">
+            <form id="loginForm">
+                <h1>Faça o login:</h1>
+                <div class="input-container">
+                    <input placeholder="Email" type="email" id="email" required>
+                    <img width="20" height="20" src="img/email.png">
+                </div>
+            
+                <div class="input-container">
+                    <input placeholder="Senha" type="password" id="password" required>
+                    <img width="20" height="20" src="img/cadeado.png">
+                </div>
+            
+                <button type="submit" class="submit-button" style="color: white;">Entrar</button>
+                
+                <div class="register-link">
+                    <p>Não está cadastrado? <a href="signup.html">  Cadastrar</a></p>
+                </div>
+            </form>
+            
 
 
 

@@ -5,39 +5,70 @@
 }
 
 body {
-    background-image: url('img/fundo.png');
-    background-repeat: no-repeat;
-    background-position: center 0px;
-    background-size: 1370px 635px;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #eca2ba91;
+    min-height: 100vh; /* Altura mínima de 100% da altura da tela. */
+    display: flex; /* Usando layout flexível. */
+    align-items: center; /* Alinha itens verticalmente ao centro. */
+    justify-content: center; /* Alinha itens horizontalmente ao centro. */
+    position: relative; /* Permite o posicionamento absoluto dos filhos */
+}
+
+.tela {
+    background-image: url('img/fundo.png'); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Escala a imagem para cobrir todo o elemento */
+    position: absolute; /* Posiciona o overlay de forma absoluta */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    bottom: 0; /* Alinha ao fundo */
+    opacity: 0.7; /* Define a opacidade da imagem de fundo */
+    z-index: 1; /* Coloca o overlay abaixo do conteúdo */
 }
 
 
 .container {
     width: 420px;
     height: 350px;
-    background-color: #fdeced;
-    border: 2px;
-    backdrop-filter: blur(100px);
-    border-radius: 40px;
-    padding: 30px 40px;
-    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff; 
+    opacity: 0.5; /* Aumenta a opacidade do contêiner */
+    border-radius: 40px; /* Cantos arredondados */
+    padding: 30px 40px; /* Espaço interno, separando o conteúdo das bordas */
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.151); /* Sombra */
+    position: relative; /* Para que o z-index funcione */
+    z-index: 2; /* Coloca o contêiner acima da imagem de fundo */
+    backdrop-filter: blur(10px); /* Desfoque ao fundo para efeito visual */
     
 }
 
 h1 {
     font-size: 36px;
     text-align: center;
-    color: #656565;
+    color: #000000ce;
 }
 
-.input-container{
+.logo {
+    position: absolute; /* Faz o logo ser posicionado absolutamente */
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    height: 150px; /* define uma altura para o logo */
+    text-align: center; /* centraliza o logo */
+    opacity: 0.7;
+    z-index: 3; /* Coloca o logo acima da imagem de fundo */
+    margin-top: 4%;
+}
+
+
+.logo img {
+    height: 100%; /* ajuste a altura da imagem */
+    width: auto; /* mantém a proporção */
+}
+
+.input-container {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 50px; 
     margin: 30px 0;
 }
 
@@ -45,59 +76,47 @@ h1 {
     width: 100%;
     height: 100%;
     background: transparent;
-    border: none;
-    outline: none;
-    border: 1px solid #656565;
+    border: 1px solid #000000;
     border-radius: 50px;
     font-size: 16px;
-    color: #656565;
-    padding: 20px 45px 20px 40px;
+    color: #000000;
+    padding: 20px 45px 20px 40px; /* Espaçamento interno para acomodar o ícone */
+    outline: none; /* Remove o contorno padrão */
 }
 
-.input-container input::placeholder{
-    color: #656565;
+.input-container input::placeholder {
+    color: #000000ce;
 }
 
-.input-container img{
+.input-container img {
     position: absolute;
-    right: 305px;
-    top: 20%;
-    margin-top: 3px;
-}
- 
-.input-container a {
-    font-size: 16px;
-    margin-top: 5px;
-    color:#fdb1b9;
-    text-decoration: none;
+    left: 15px; /* Ajusta a posição do ícone para a esquerda */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.input-container a:hover{
-    text-decoration: underline;
-}
+
 
 .submit-button {
-    width: 100%; 
-    max-width: 200px; 
+    width: 100%;
+    max-width: 200px;
     height: 40px;
-    background-color: #f7ced2;
+    background-color: #e60965;
     border: none;
     border-radius: 40px;
-    color: #656565;
     font-weight: 500;
     margin-top: 24px;
     cursor: pointer;
     outline: none;
     font-size: 16px;
-    display: block; 
+    display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    transition: background-color 0.3s ease;
 }
 
-
-.submit-button:hover{
-    background-color: #ffbabff3;
-    
+.submit-button:hover {
+    background-color: #e6096583; /* Efeito de hover */
 }
 
 .register-link  {
@@ -107,14 +126,14 @@ h1 {
 
 .register-link p {
     font-size: 16px;
-    color: #656565;
+    color: #000000ce;
     font-weight: 500;
    
   
 }
 .register-link p a{
     font-size: 16px;
-    color: #f8bcc0f3;
+    color: #000000ce;
     font-weight: 700;
     text-decoration: none;
  

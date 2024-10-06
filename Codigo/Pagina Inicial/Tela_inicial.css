@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.parte1 {
+    background-image: url(Imagem/Bolo.png);
+    opacity: 0.7;
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.navbar {
+    background-color: white; 
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 0 0 30px 30px; /* Apenas os cantos inferiores */
+}
+
+
+
+.nav-links {
+    list-style-type: none; 
+    display: flex; /* Itens em linha */
+    align-items: center; 
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 7%; /* Espaço entre os itens */
+}
+
+.nav-links a {
+    color: #ECA2BB;
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+.nav-links .logo img {
+    height: 60px; /* Altura do logo */
+    width: auto; 
+}
