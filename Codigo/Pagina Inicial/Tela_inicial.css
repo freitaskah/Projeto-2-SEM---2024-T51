@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+}
+
+/* NAV */
+
+.parte1 {
+    background-image: url(Imagem/Bolo.png);
+    opacity: 0.7;
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.navbar {
+    background-color: white; 
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 0 0 30px 30px; /* Apenas os cantos inferiores */
+}
+
+
+
+.nav-links {
+    list-style-type: none; 
+    display: flex; /* Itens em linha */
+    align-items: center; 
+    justify-content: center;
+    font-weight: bold;
+}
+
+.nav-links li {
+    margin: 0 7%; /* Espaço entre os itens */
+}
+
+.nav-links a {
+    color: #ECA2BB;
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+.nav-links .logo img {
+    height: 60px; /* Altura do logo */
+    width: auto; 
+}
+
+/* MENU */
+
+.menu h3{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex; 
+    font-size: 75px;
+    color: #E60965;
+    margin-bottom: 2%;
+}
+
+/* OPÇÕES */
+
+.btn-option{
+    display: flex;
+    flex-direction: column;
+    padding: -10px;
+    margin: 2px 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-option img{
+    border-radius: 20%;
+    /* filter: grayscale(100%); */
+    transition: 1s;
+    border: 7px solid #ECA2BB;
+    border-bottom: 40px solid #ECA2BB;
+}
+
+.btn-option img:hover{
+    filter: none
+
+}
+
+/*Categorys*/
+
+.promo-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 2,5%;
+
+}
+
+.promo-box img {
+    width: 200px;
+    margin: 15px 15px;
+    border-radius: 15px;
+}
+
+.promo-box h4{
+    margin-top: -20%;
+    color: #fff;
+
+}

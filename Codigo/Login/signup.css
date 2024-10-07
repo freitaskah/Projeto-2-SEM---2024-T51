@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #eca2ba91;
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: relative; 
+}
+
+
+
+.tela {
+    background-image: url('img/fundo.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0; 
+    opacity: 0.7; 
+    z-index: 1; /* Coloca o overlay abaixo do conteúdo */
+}
+
+.container {
+    width: 420px; 
+    height: 485px; 
+    background-color: #ffffff; 
+    opacity: 0.5; 
+    border-radius: 40px;
+    padding: 30px 40px; /* Espaço interno*/
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.151); 
+    position: relative; /* Para que o z-index funcione */
+    z-index: 2; /* Coloca o contêiner acima da imagem de fundo */
+    backdrop-filter: blur(10px); 
+
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #000000ce;
+}
+
+.logo {
+    position: absolute;
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    height: 150px; /* define uma altura para o logo */
+    text-align: center; 
+    opacity: 0.7;
+    z-index: 3; /* Coloca o logo acima da imagem de fundo */
+    margin-top: 2.5%;
+}
+
+
+.logo img {
+    height: 100%; 
+    width: auto; /* mantém a proporção */
+}
+
+
+.input-container input::placeholder {
+    color: #000000ce;
+}
+
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 50px; 
+    margin: 30px 0;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 45px 20px 40px; /* Espaçamento interno para acomodar o ícone */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.input-container img {
+    position: absolute;
+    left: 15px; /* Ajusta a posição do ícone para a esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.submit-button {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    background-color: #e60965;
+    border: none;
+    border-radius: 40px;
+    font-weight: 500;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e6096583; /* Efeito de hover */
+}
