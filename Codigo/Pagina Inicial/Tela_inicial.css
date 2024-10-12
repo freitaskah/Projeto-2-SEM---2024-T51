@@ -6,18 +6,31 @@
 
 body {
     font-family: Arial, sans-serif; 
+    background-color: #FEEBF1;
 }
 
 /* NAV */
 
 .parte1 {
     background-image: url(Imagem/Bolo.png);
-    opacity: 0.7;
-    width: 100%;
-    height: 100vh;
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; /* Não repete a imagem */
+    background-repeat: no-repeat;
+    position: relative; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.parte1::after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: linear-gradient(to bottom, rgba(254, 235, 241, 0) 90%, #FEEBF1 97%); 
+    opacity: 0.10s; 
+    pointer-events: none; 
 }
 
 .navbar {
@@ -61,7 +74,8 @@ body {
     display: flex; 
     font-size: 75px;
     color: #E60965;
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
 }
 
 /* OPÇÕES */
@@ -69,46 +83,74 @@ body {
 .btn-option{
     display: flex;
     flex-direction: column;
-    padding: -10px;
+    padding: 30px;
     margin: 2px 5px;
     text-align: center;
     justify-content: center;
-}
-
-.btn-option img{
-    border-radius: 20%;
-    /* filter: grayscale(100%); */
-    transition: 1s;
-    border: 7px solid #ECA2BB;
-    border-bottom: 40px solid #ECA2BB;
+    cursor: pointer;
 }
 
 .btn-option img:hover{
     filter: none
 
 }
-
-/*Categorys*/
-
 .promo-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 2,5%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 1.5%;
 
 }
 
 .promo-box img {
-    width: 200px;
-    margin: 15px 15px;
-    border-radius: 15px;
+    width: 220px;
+    margin: 5px 5px;
+    border-radius: 50px;
+    transition: 1.5s;
+    border: 5.5px solid #ECA2BB;
+    border-bottom: 27px solid #ECA2BB;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .promo-box h4{
-    margin-top: -20%;
+    margin-top: -12%;
     color: #fff;
 
+}
+
+/* Produtos */
+
+.Carrossel{
+    display: flex;
+    width: 90%;    
+    height: 300px;      
+    background-color: #ECA2BB;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Carrossel h2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3%; 
+    color: #fff;
+}
+.Carrossel img{
+    width: 17%;
+    padding: 2%;
+    border-radius: 50px;
+}
+
+.Carrossel_fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
