@@ -9,20 +9,44 @@
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-    <div class="Imagem">
-        <div class="box">
-            <div class="Imagem_adicionada">
 
-                <img id="image-preview" src="" alt="Imagem selecionada" style="display:none;"/>
+    <div class="Imagem"></div> <!-- Div para imagem de fundo -->
+
+    <div class="box"> <!-- Div que contém os elementos do formulário -->
+
+            <div class="Imagem_adicionada" id="image-container">
+                <div class="ocultar">
+                    <p class="Add">Escolha uma Imagem</p>
+                    <img src="img/foto.png" class="icon_img" />
+                </div>
+                <img id="image-preview" src="" alt="Imagem selecionada" style="display:none;" />
                 <input type="file" id="image-upload" accept="image/*" style="display:none;" />
-                <label for="image-upload" class="custom-file-upload">
-                    <span class="material-symbols-outlined">
-                        add_photo_alternate
-                        </span>
-                </label>
-                
             </div>
-        </div>
+
+
+            <div class="Direita">
+                <p class="t">Cadastro de Produtos:</p>
+                
+                <br>
+
+                <div class="input-container">
+                    <input placeholder="Nome" type="text" id="username" >
+
+                </div>
+
+                <div class="descricao-input">
+                    <textarea placeholder="Descrição" id="description" rows="4"></textarea>
+                </div>
+                
+                <div class="botões">
+                    <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> oi </button>
+                    <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> oi </button>
+                    <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> oi </button>
+                </div>
+                <br>
+                <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href="">Registrar</button>
+                
+            </div> <!-- Novo div para o texto -->
+        
+        
     </div>
-</body>
-</html>

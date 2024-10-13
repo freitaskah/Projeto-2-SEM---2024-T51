@@ -6,16 +6,28 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Garante que a altura mínima do corpo seja a altura da janela */
+    background-color: #f0f0f0; /* Opcional: cor de fundo para melhor visualização */
 }
 
+
 .Imagem {
-    background-image: url(/Codigo/tela_cadastro/tela_cadastro/img/Imagem\ rosa\ \(1\).png);
-    display: flex;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 100vh; 
+    background-image: url('img/Fundo_rosa.png');
+    background-repeat: no-repeat; 
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    position: fixed; /* Muda para fixed para que cubra toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 1; /* Coloca o overlay abaixo do conteúdo */
+    opacity: 0.8; /* Ajuste a opacidade se necessário */
 }
+
 
 .box {
     display: flex;
@@ -29,19 +41,143 @@ body {
     margin: auto;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     opacity: 0.87;
+    position: relative; /* Para que o z-index funcione */
+    z-index: 2; /* Coloca o contêiner acima da imagem de fundo */
 }
 
 .Imagem_adicionada {
     display: flex;
-    width: 45%;    
-    height: 90%;      
+    flex-direction: column; /* Mantenha como coluna */
+    width: 45%;
+    height: 90%;
     background-color: #CACACA;
     border-radius: 30px;
-    align-items: center;
-    overflow: hidden; 
-    margin-left: 20px; 
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-left: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
 }
+
+
+.Add {
+    text-align: center; 
+    color: white; 
+    font-size: 24px; 
+    margin: 0; 
+}
+
+.icon_img {
+    width: 50px;
+    height: auto;
+    margin: 10px auto 0; /* Centraliza horizontalmente */
+    display: block; /* Necessário para que o margin auto funcione */
+}
+
+.botões {
+    display: flex; /* Alinha os botões na mesma linha */
+    justify-content: center; /* Opcional: centraliza os botões */
+}
+
+.submit-button {
+    color: rgb(255, 255, 255);
+    margin: 0 10px; /* Adiciona espaço entre os botões */
+    /* Adicione outros estilos que desejar para os botões */
+}
+
+
+.Direita {
+    width: 45%; /* Ajuste a largura conforme necessário */
+    color: white; /* Altere a cor do texto se necessário */
+    font-size: 20px; /* Ajuste o tamanho da fonte */
+    padding: 20px; /* Adicione algum preenchimento */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Para organizar os itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha o texto à esquerda */
+}
+
+
+.t{
+    font-size: 27px;
+}
+
+.input-container {
+    position: relative;
+    width: 95%; 
+    height: 45px; 
+    margin: 10px 0;
+    background-color: #CA6686; 
+    border-radius: 10px;
+    overflow: hidden; /* Garante que o conteúdo não saia do contêiner */
+}
+
+.input-container input {
+    width: 100%; 
+    height: 100%; 
+    background: transparent; 
+    border: none;
+    border-radius: 10px; 
+    font-size: 16px; 
+    color: #eb8aab; 
+    padding: 10px 20px;
+    outline: none; 
+
+}
+
+.input-container input::placeholder {
+    color: #eb8aab; 
+}
+
+
+.input-container input:focus {
+    border: 1px solid #FF9BC5;
+    color: white !important;
+    
+}
+
+.input-container input:focus::placeholder {
+    color: #FF9BC5; /* Muda a cor do placeholder para branca */
+}
+.descricao-input {
+    position: relative;
+    width: 95%; 
+    height: 110px; 
+    margin: 10px 0;
+    background-color: #CA6686; 
+    border-radius: 10px; /* Mantenha o mesmo raio de borda */
+    overflow: hidden; /* Garante que o conteúdo não saia do contêiner */
+}
+
+.descricao-input textarea {
+    width: 100%; 
+    height: 100%; 
+    background: transparent; 
+    border: none;
+    border-radius: 10px; 
+    font-size: 16px; 
+    color: #eb8aab; 
+    padding: 10px 20px;
+    outline: none; 
+    resize: none; /* Remove a opção de redimensionar se não desejar */
+}
+
+.descricao-input textarea::placeholder {
+    color: #eb8aab; 
+}
+
+.descricao-input textarea:focus {
+    border: 1px solid #FF9BC5;
+    color: white !important;
+}
+
+.descricao-input textarea:focus::placeholder {
+    color: #eb8aab; 
+}
+
+
+
+
 
 #image-preview {
     width: 100%; 
@@ -50,20 +186,14 @@ body {
     object-fit: cover;  
 }
 
+@media (max-width: 900px) {
+    .box {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        width: 90%; /* Ajusta a largura */
+    }
 
-.custom-file-upload {
-    display: inline-block;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #B0556D;
-    color: white;
-    border-radius: 5px;
-    margin-left: 10px; 
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-.custom-file-upload i {
-    margin-right: 5px;
+    .Imagem_adicionada {
+        width: 100%; /* Ajusta a largura da área de imagem */
+        margin-left: 0; /* Remove margem à esquerda */
+    }
 }

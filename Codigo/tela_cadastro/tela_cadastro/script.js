@@ -1,18 +1,26 @@
-document.getElementById('image-upload').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    const reader = new FileReader();
+// Seleciona o contêiner da imagem e o input de upload
+const imageContainer = document.getElementById('image-container');
+const imageUpload = document.getElementById('image-upload');
+const imagePreview = document.getElementById('image-preview');
+const ocultarDiv = document.querySelector('.ocultar'); // Seleciona a div "ocultar"
 
-    reader.onload = function(e) {
-        const img = document.getElementById('image-preview');
-        img.src = e.target.result;
-        img.style.display = 'block';
+// Adiciona um evento de clique ao contêiner da imagem
+imageContainer.addEventListener('click', () => {
+    imageUpload.click(); // Simula o clique no input de arquivo
+});
 
-        document.getElementById('image-upload').style.display = 'none';
-        
-        document.querySelector('label[for="image-upload"]').style.display = 'none';
-    };
-
+// Adiciona um evento para quando uma imagem é selecionada
+imageUpload.addEventListener('change', (event) => {
+    const file = event.target.files[0]; // Pega o primeiro arquivo selecionado
     if (file) {
-        reader.readAsDataURL(file);
+        const reader = new FileReader(); // Cria um FileReader para ler o arquivo
+        reader.onload = () => {
+            imagePreview.src = reader.result; // Define a imagem de pré-visualização
+            imagePreview.style.display = 'block'; // Mostra a imagem
+            
+            // Esconde a div "ocultar" e mostra a imagem
+            ocultarDiv.style.display = 'none'; // Esconde a div "ocultar"
+        };
+        reader.readAsDataURL(file); // Lê o arquivo como URL de dados
     }
 });
