@@ -28,6 +28,18 @@ body {
     opacity: 0.8; /* Ajuste a opacidade se necessário */
 }
 
+.logo {
+    position: fixed; /* Para posicionar em relação à janela */
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a centralização */
+    width: 10vw; /* Ajuste o tamanho da logo com base na largura da viewport */
+    height: auto; /* Mantém a proporção */
+    z-index: 3; /* Certifica-se de que está na frente */
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
 
 .box {
     display: flex;
@@ -74,16 +86,6 @@ body {
     display: block; /* Necessário para que o margin auto funcione */
 }
 
-.botões {
-    display: flex; /* Alinha os botões na mesma linha */
-    justify-content: center; /* Opcional: centraliza os botões */
-}
-
-.submit-button {
-    color: rgb(255, 255, 255);
-    margin: 0 10px; /* Adiciona espaço entre os botões */
-    /* Adicione outros estilos que desejar para os botões */
-}
 
 
 .Direita {
@@ -100,6 +102,7 @@ body {
 
 .t{
     font-size: 27px;
+    
 }
 
 .input-container {
@@ -137,7 +140,7 @@ body {
 }
 
 .input-container input:focus::placeholder {
-    color: #FF9BC5; /* Muda a cor do placeholder para branca */
+    color: #ffffff; /* Muda a cor do placeholder para branca */
 }
 .descricao-input {
     position: relative;
@@ -175,8 +178,44 @@ body {
     color: #eb8aab; 
 }
 
+.botões {
+    display: flex; /* Alinha os botões na mesma linha */
+    justify-content: center; /* Opcional: centraliza os botões */
+    width: 95%;
+    margin-top: 20%;
+    
+}
 
+.submit-button {
+    color: rgb(255, 255, 255);
+    width: 30%; 
+    height: 45px; 
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #FF9BC5;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.158);
+}
 
+.space{
+    margin: 2%;
+}
+
+.icones{
+    margin-top: 5px;
+    width: 25%;
+    height: 50%;
+}
+
+.button {
+    position: relative;
+    width: 95%; 
+    height: 45px; 
+    background-color: #CA6686; 
+    border-radius: 10px;
+    font-size: 16px; 
+    border: transparent;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.158);
+}
 
 
 #image-preview {
