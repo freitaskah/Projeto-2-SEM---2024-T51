@@ -113,6 +113,7 @@ body {
     background-color: #CA6686; 
     border-radius: 10px;
     overflow: hidden; /* Garante que o conteúdo não saia do contêiner */
+    margin-top: 8%;
 }
 
 .input-container input {
@@ -145,11 +146,12 @@ body {
 .descricao-input {
     position: relative;
     width: 95%; 
-    height: 110px; 
+    height: 130px; 
     margin: 10px 0;
     background-color: #CA6686; 
     border-radius: 10px; /* Mantenha o mesmo raio de borda */
     overflow: hidden; /* Garante que o conteúdo não saia do contêiner */
+    margin-bottom: 3%;
 }
 
 .descricao-input textarea {
@@ -175,7 +177,7 @@ body {
 }
 
 .descricao-input textarea:focus::placeholder {
-    color: #eb8aab; 
+    color: #ffffff; 
 }
 
 .botões {
@@ -196,6 +198,12 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.158);
 }
 
+.submit-button:hover {
+    background-color: #FF9BC5; /* Cor que você deseja ao passar o mouse */
+    color: #fff; /* Opcional: altera a cor do texto */
+}
+
+
 .space{
     margin: 2%;
 }
@@ -215,6 +223,11 @@ body {
     font-size: 16px; 
     border: transparent;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.158);
+}
+
+.button:hover {
+    background-color: #FF9BC5; /* Cor que você deseja ao passar o mouse */
+    color: #fff; /* Opcional: altera a cor do texto */
 }
 
 
