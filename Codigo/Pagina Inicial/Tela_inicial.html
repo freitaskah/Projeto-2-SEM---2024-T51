@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A&L Cakes</title>
     <link rel="stylesheet" href="Tela_inicial.css">
-    <script type="text/javascript" src="Tela_inicial_produtos.js" defer></script>
+    <script type="text/javascript" src="JS/Tela_inicial_menu_produtos.js" defer></script>
+    <script type="text/javascript" src="JS/Tela_inicial_escolha_produtos.js"></script>
 </head>
 <body>
     <div class="parte1">
@@ -52,7 +53,7 @@
 
     <br><br><br><br><br>
 
-    <!-- Produtos -->
+    
     <article id="Bolos" class="category">
         <div class="principal-cat-box">
             <div class="prinipal-box">
@@ -61,18 +62,29 @@
                         <div class="Carrossel_geral">
                             <h2>Bolos</h2>
                             <div class="Carrossel_fotos">
-                            <img src="/Codigo/Pagina Inicial/Imagem/exemplo.png">
-                            <img src="/Codigo/Pagina Inicial/Imagem/exemplo.png">
-                            <img src="/Codigo/Pagina Inicial/Imagem/exemplo.png">
-                            <img src="/Codigo/Pagina Inicial/Imagem/exemplo.png">
-                            <img src="/Codigo/Pagina Inicial/Imagem/exemplo.png">
+                                <button id="left-button" class="next-button" onclick="moverParaEsquerda()">
+                                    <img src="Imagem/seta-para-a-esquerda.png" alt="left-button">
+                                </button>
+                                <div class="box-produtos">
+                                    <img src="Imagem/exemplo.png">
+                                    <img src="Imagem/exemplo.png">
+                                    <img src="Imagem/exemplo.png">
+                                    <img src="Imagem/exemplo.png">
+                                </div>
+                                <button id="right-button" class="next-button" onclick="moverParaDireita()">
+                                    <img src="Imagem/seta-para-a-direita.png" alt="right-button">
+                                </button>
                             </div>
+                                                
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </article>
+   
+
 
     <article id="Variedades" class="category">
         <div class="principal-cat-box">
@@ -133,6 +145,9 @@
             </div>
         </div>
     </article>
-    <br><br><br><br><br><br><br>
+
+    <div class="Banner" ></div>
+
+    <br><br><br><br><br>
 </body>
 </html>

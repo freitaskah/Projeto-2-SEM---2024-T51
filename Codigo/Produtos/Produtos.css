@@ -78,10 +78,6 @@ body{
     width: auto; 
 }
 
-
-
-
-
 .produto {
     display: flex;
     justify-content: center;
@@ -89,6 +85,5 @@ body{
     
 }
 
-.imagem-produto{
 
-}
+

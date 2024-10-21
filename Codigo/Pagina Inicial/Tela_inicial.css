@@ -143,8 +143,16 @@ body {
     margin-top: 1.3%; 
     color: #fff;
 }
-.Carrossel img{
-    width: 17%;
+
+.box-produtos {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.box-produtos img {
+    width: 19%;
     padding: 2%;
     border-radius: 50px;
 }
@@ -154,3 +162,32 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+/* BOTOES */
+
+.next-button img,button{
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+}
+
+.next-button {
+    margin: 0 30px;
+}
+
+.Banner{
+    background-image: url(Imagem/confeiteira.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative; 
+    height: 100vh; 
+    overflow: hidden; 
+    margin-top: 5%;
+    filter: brightness(0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
