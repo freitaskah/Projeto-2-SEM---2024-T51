@@ -12,11 +12,11 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    margin-bottom: 100px;
+
 }
 
 .img_fundo {
-    background-image: url('Imagem/fundo_bolos.jpg');
+    /* background-image: url('Imagem/fundo_bolos.jpg');*/ 
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -78,12 +78,125 @@ body{
     width: auto; 
 }
 
-.produto {
+
+
+
+
+.content-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+    padding: 20px;
+    position: relative; /* Para aplicar z-index corretamente */
+    z-index: 1; /* Certifique-se de que este valor seja maior que o z-index da img_fundo */
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+
 }
 
+
+.left-side {
+    flex: 1;
+    text-align: center;
+}
+
+.bolo-image {
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 350px; /* Limite máximo para a imagem */
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #98594D;
+}
+
+.right-side {
+    flex: 1;
+    padding-left: 20px; /* Espaçamento entre os lados */
+    color: #98594D;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    font-family: "Kaushan Script", sans-serif;
+}
+
+button {
+    background-color: #98594D; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 1.5% 5%;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    font-size: 90%;
+}
+
+button:hover {
+    background-color: rgba(119, 69, 59, 0.644); /* Cor do botão ao passar o mouse */
+}
+
+
+footer {
+    background-color: #f8f8f8; /* Cor de fundo do footer */
+    padding: 20px;
+
+    position: relative; /* Para aplicar z-index corretamente */
+    z-index: 10;
+    border: 1px solid #98594D;
+}
+.footer-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha as colunas à esquerda */
+
+}
+
+.footer-column {
+    margin-right: 7%;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+.footer-column h3 {
+    color: #000000; /* Cor do título */
+    margin-bottom: 10px; /* Margem abaixo do título */
+    font-size: 16px; /* Tamanho do título */
+}
+
+.footer-column p {
+    margin: 5px 0; /* Margem entre os parágrafos */
+    font-size: 14px; /* Tamanho do texto */
+}
+.footer-column a {
+    color: #000000; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 14px; /* Tamanho do texto dos links */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.contact-button {
+    background-color: #e60965b0; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 8px 35px;
+    cursor: pointer;
+    margin: 10px 0; /* Espaçamento acima e abaixo do botão */
+}
+
+.contact-button:hover {
+    background-color: #e609655b; /* Cor do botão ao passar o mouse */
+}
+
+.map {
+    margin-top: 10px; /* Margem acima do mapa */
+}
+
+html, body {
+    height: 100%; /* Garante que o body ocupe 100% da altura da tela */
+    margin: 0; /* Remove margens do body */
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+}
 
 
