@@ -33,6 +33,21 @@ body {
     pointer-events: none; 
 }
 
+.parte1 p{
+    font-size: 20px;
+    display: flex;
+    color: #fff;
+    margin-top: 18%;
+    margin-left: 5%;
+}
+
+.parte1 h1{
+    font-size: 45px;
+    display: flex;
+    color: #fff;
+    margin-left: 5%;
+}
+
 .navbar {
     background-color: white; 
     padding: 10px 20px; /* Espaçamento interno */
@@ -155,6 +170,8 @@ body {
     width: 19%;
     padding: 2%;
     border-radius: 50px;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .Carrossel_fotos{
@@ -178,7 +195,8 @@ body {
     margin: 0 30px;
 }
 
-.Banner{
+.Banner {
+    display: flex;
     background-image: url(Imagem/confeiteira.jpg);
     background-size: cover; 
     background-position: center; 
@@ -187,7 +205,62 @@ body {
     height: 100vh; 
     overflow: hidden; 
     margin-top: 5%;
-    filter: brightness(0.5);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.Banner-box {
+    display: flex;
+    width: 35%;  
+    height: 90%;      
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 30px;
+    align-items: center;
+    margin: auto;
+    z-index: 2; 
+    margin-left: 5%
+}
+
+.Banner-box h1,p {
+    display: flex;
+    opacity: 1; 
+    color: #fff; 
+    z-index: 3; 
+    align-items: center;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Banner-box h1 {
+    font-size: 50px;
+    justify-content: center;
+}
+
+.Banner-box p {
+    font-size: 25px; 
+    color: #fff;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+.Celular_01 {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 150px;
 }
 
