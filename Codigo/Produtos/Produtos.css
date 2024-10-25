@@ -68,14 +68,14 @@ body{
 }
 
 .nav-links a {
-    color: #ECA2BB;
+    color: #e60965b0;
     text-decoration: none; 
     font-size: 16px; 
 }
 
 .nav-links .logo img {
     height: 60px; /* Altura do logo */
-    width: auto; 
+    width: 120%; 
 }
 
 
@@ -99,13 +99,17 @@ body{
     text-align: center;
 }
 
+.left-side:hover {
+    opacity: 0.9;
+}
+
 .bolo-image {
     width: 100%; /* Ajuste conforme necessário */
     max-width: 350px; /* Limite máximo para a imagem */
     height: auto;
     border-radius: 50px;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    border: 1px solid #98594D;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.3);
+
 }
 
 .right-side {
