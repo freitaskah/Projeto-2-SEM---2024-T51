@@ -28,25 +28,34 @@ body {
     left: 0; 
     right: 0; 
     bottom: 0; 
-    background: linear-gradient(to bottom, rgba(254, 235, 241, 0) 90%, #FEEBF1 97%); 
+    background: linear-gradient(to bottom, rgba(254, 235, 241, 0) 95%, #FEEBF1 97%); 
     opacity: 0.10s; 
     pointer-events: none; 
 }
 
-.parte1 p{
-    font-size: 20px;
+.parte1 .texto1{
+    font-size: 2.5vh;
     display: flex;
     color: #fff;
-    margin-top: 18%;
-    margin-left: 5%;
+    margin-top: 15%;
+    margin-left: 10%;
 }
 
 .parte1 h1{
-    font-size: 45px;
+    font-size: 6vh;
     display: flex;
     color: #fff;
-    margin-left: 5%;
+    margin-left: 10%;
 }
+
+.parte1 .texto {
+    width: 17%;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 2%; /* Remove a margem superior */
+    font-size: 2vh;
+}
+
 
 .navbar {
     background-color: white; 
@@ -202,10 +211,11 @@ body {
     background-position: center; 
     background-repeat: no-repeat;
     position: relative; 
-    height: 100vh; 
+    height: 90vh; 
     overflow: hidden; 
-    margin-top: 5%;
+    margin-top:15%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    
 }
 
 .Banner::before {
@@ -219,12 +229,18 @@ body {
     z-index: 1;
 }
 
+.sobre1 {
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: 3vh;
+}
+
 .Banner-box {
     display: flex;
     width: 35%;  
     height: 90%;      
-    background-color: rgba(255, 255, 255, 0.3); 
-    border-radius: 30px;
+    background-color: #a8a8a83d; 
+    border-radius: 20%;
     align-items: center;
     margin: auto;
     z-index: 2; 
@@ -238,29 +254,98 @@ body {
     z-index: 3; 
     align-items: center;
     margin: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+
 }
 
 .Banner-box h1 {
-    font-size: 50px;
+    font-size: 6vh;
     justify-content: center;
 }
 
 .Banner-box p {
-    font-size: 25px; 
+    font-size: 2.5vh; 
     color: #fff;
     margin-top: 10%;
     text-align: center;
+    justify-items: center;
 }
 
+.sobre2 {
+    margin-left: 17%;
+    margin-right: 17%;
+}
 
 .Celular_01 {
     display: flex;
-    width: 40%;
+    width: 32%;
     justify-content: center;
     align-items: center;
     margin: auto;
     margin-top: 150px;
 }
+
+
+footer {
+    background-color: #f8f8f8; 
+    padding: 20px;
+
+    position: relative; /* Para aplicar z-index corretamente */
+    z-index: 10;
+    border: 1px solid #98594D;
+}
+.footer-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha as colunas à esquerda */
+
+}
+
+.footer-column {
+    margin-right: 7%;
+    text-align: left;
+}
+
+
+.footer-column h3 {
+    color: #000000; 
+    margin-bottom: 10px; 
+    font-size: 16px; 
+}
+
+.footer-column p {
+    margin: 5px 0; 
+    font-size: 14px;
+}
+.footer-column a {
+    color: #000000;
+    text-decoration: none; 
+    font-size: 14px; 
+}
+
+.footer-column a:hover {
+    text-decoration: underline; 
+}
+
+.contact-button {
+    background-color: #e60965b0; 
+    color: white;
+    border: none;
+    padding: 8px 35px;
+    cursor: pointer;
+    margin: 10px 0; 
+}
+
+.contact-button:hover {
+    background-color: #e609655b; 
+}
+
+.map {
+    margin-top: 10px; /* Margem acima do mapa */
+}
+
+footer h3,
+footer p {
+    color: black; /* Define a cor do texto para preto */
+}
+
+
 

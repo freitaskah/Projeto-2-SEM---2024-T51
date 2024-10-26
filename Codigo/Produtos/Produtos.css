@@ -140,7 +140,7 @@ button:hover {
 
 
 footer {
-    background-color: #f8f8f8; /* Cor de fundo do footer */
+    background-color: #f8f8f8; 
     padding: 20px;
 
     position: relative; /* Para aplicar z-index corretamente */
@@ -155,41 +155,41 @@ footer {
 
 .footer-column {
     margin-right: 7%;
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
 }
 
 
 .footer-column h3 {
-    color: #000000; /* Cor do título */
-    margin-bottom: 10px; /* Margem abaixo do título */
-    font-size: 16px; /* Tamanho do título */
+    color: #000000; 
+    margin-bottom: 10px; 
+    font-size: 16px; 
 }
 
 .footer-column p {
-    margin: 5px 0; /* Margem entre os parágrafos */
-    font-size: 14px; /* Tamanho do texto */
+    margin: 5px 0; 
+    font-size: 14px;
 }
 .footer-column a {
-    color: #000000; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado dos links */
-    font-size: 14px; /* Tamanho do texto dos links */
+    color: #000000;
+    text-decoration: none; 
+    font-size: 14px; 
 }
 
 .footer-column a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+    text-decoration: underline; 
 }
 
 .contact-button {
-    background-color: #e60965b0; /* Cor do botão */
+    background-color: #e60965b0; 
     color: white;
     border: none;
     padding: 8px 35px;
     cursor: pointer;
-    margin: 10px 0; /* Espaçamento acima e abaixo do botão */
+    margin: 10px 0; 
 }
 
 .contact-button:hover {
-    background-color: #e609655b; /* Cor do botão ao passar o mouse */
+    background-color: #e609655b; 
 }
 
 .map {
@@ -197,8 +197,8 @@ footer {
 }
 
 html, body {
-    height: 100%; /* Garante que o body ocupe 100% da altura da tela */
-    margin: 0; /* Remove margens do body */
+    height: 100%; 
+    margin: 0; 
     display: flex;
     flex-direction: column; /* Organiza os filhos em coluna */
 }
