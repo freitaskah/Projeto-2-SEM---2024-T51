@@ -52,30 +52,30 @@ body {
     width: 17%;
     color: #fff;
     margin-left: 10%;
-    margin-top: 2%; /* Remove a margem superior */
+    margin-top: 2%; 
     font-size: 2vh;
 }
 
 
 .navbar {
     background-color: white; 
-    padding: 10px 20px; /* Espaçamento interno */
+    padding: 10px 20px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    border-radius: 0 0 30px 30px; /* Apenas os cantos inferiores */
+    border-radius: 0 0 30px 30px; 
 }
 
 
 
 .nav-links {
     list-style-type: none; 
-    display: flex; /* Itens em linha */
+    display: flex; 
     align-items: center; 
     justify-content: center;
     font-weight: bold;
 }
 
 .nav-links li {
-    margin: 0 7%; /* Espaço entre os itens */
+    margin: 0 7%; 
 }
 
 .nav-links a {
@@ -85,7 +85,7 @@ body {
 }
 
 .nav-links .logo img {
-    height: 60px; /* Altura do logo */
+    height: 60px; 
     width: auto; 
 }
 
@@ -161,21 +161,49 @@ body {
     background-color: #ECA2BB; 
     border-radius: 50px; 
 }
-
   
-  .swiper img {
-    box-shadow: 0 1px 2px #0003;
-    width: 20%;
-  }
 
-  
-  .swiper-slide {
+.project-img p {
+    color: #fff;
+    font-size: 1.2em; 
     text-align: center;
-    display: flex;
-    align-items: center;
     justify-content: center;
-  }
-  
+}
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.project-img {
+    display: flex; 
+    justify-content: center; 
+}
+
+.swiper-slide {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.flex-container img {
+    width: 250px; 
+    margin-bottom: 10px; 
+    border-radius: 10%;
+}
+
+.flex-container p {
+    color: #fff; 
+    font-size: 1.2em;
+    text-align: center; 
+}
+
+.flex-container a{
+    text-decoration: none;
+}
+
 
 /* BOTOES */
 
@@ -264,13 +292,13 @@ footer {
     background-color: #f8f8f8; 
     padding: 20px;
 
-    position: relative; /* Para aplicar z-index corretamente */
+    position: relative; 
     z-index: 10;
     border: 1px solid #98594D;
 }
 .footer-container {
     display: flex;
-    justify-content: flex-start; /* Alinha as colunas à esquerda */
+    justify-content: flex-start; 
 
 }
 
@@ -314,12 +342,12 @@ footer {
 }
 
 .map {
-    margin-top: 10px; /* Margem acima do mapa */
+    margin-top: 10px; 
 }
 
 footer h3,
 footer p {
-    color: black; /* Define a cor do texto para preto */
+    color: black; 
 }
 
 
