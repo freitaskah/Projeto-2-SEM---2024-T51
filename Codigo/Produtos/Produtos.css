@@ -105,7 +105,7 @@ body{
 
 .bolo-image {
     width: 100%; /* Ajuste conforme necessário */
-    max-width: 350px; /* Limite máximo para a imagem */
+    max-width: 40vh; /* Limite máximo para a imagem */
     height: auto;
     border-radius: 50px;
     box-shadow: 0 30px 35px rgba(0, 0, 0, 0.3);
