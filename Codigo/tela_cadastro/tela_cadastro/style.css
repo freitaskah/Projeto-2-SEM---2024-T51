@@ -252,6 +252,7 @@ body {
 
 
 .splash-screen {
+    background-image: url(img/logo_zoom.png);
     position: fixed; /* Para cobrir toda a tela */
     top: 0;
     left: 0;
