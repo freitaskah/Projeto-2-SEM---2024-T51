@@ -12,53 +12,57 @@
 
     <div class="Imagem"></div> <!-- Div para imagem de fundo -->
 
+
+    <div class="splash-screen">
+        <img class="splash-logo" src="img/logo-png.jpg" alt="Logo da A&L Cakes">
+    </div>
+    
     <div class="box-conjunto">
-    <img class="logo" src="img/logo-png.png" alt="" >
+
+        <main>
+                <div class="box"> <!-- Div que contém os elementos do formulário -->
+
+                    <div class="Imagem_adicionada" id="image-container">
+                        <div class="ocultar">
+                            <p class="Add">Escolha uma Imagem</p>
+                            <img src="img/foto.png" class="icon_img" />
+                        </div>
+                        <img id="image-preview" src="" alt="Imagem selecionada" style="display:none;" />
+                        <input type="file" id="image-upload" accept="image/*" style="display:none;" />
+                    </div>
 
 
-    <div class="box"> <!-- Div que contém os elementos do formulário -->
+                    <div class="Direita">
+                        <p class="t">Cadastro de Produtos:</p>
+                        
+                        <br>
 
-            <div class="Imagem_adicionada" id="image-container">
-                <div class="ocultar">
-                    <p class="Add">Escolha uma Imagem</p>
-                    <img src="img/foto.png" class="icon_img" />
+                        <div class="input-container">
+                            <input placeholder="Nome" type="text" id="username" >
+
+                        </div>
+
+                        <div class="descricao-input">
+                            <textarea placeholder="Descrição" id="description" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="botões">
+                            <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> <img class="icones" src="img/cesto-de-lixo.png" alt=""> </button>
+
+                            <div class="space"></div>
+
+                            <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> <img class="icones" src="img/botao-atualizar.png" alt=""> </button>
+
+                            <div class="space"></div>
+                            
+                            <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> <img class="icones" src="img/lupa-de-pesquisa.png" alt=""> </button>
+                        </div>
+
+
+                        <br>
+                        <button type="submit" class="button" style="color: rgb(255, 255, 255);" href="">Criar Produto</button>
+                        
+                    </div> 
                 </div>
-                <img id="image-preview" src="" alt="Imagem selecionada" style="display:none;" />
-                <input type="file" id="image-upload" accept="image/*" style="display:none;" />
-            </div>
-
-
-            <div class="Direita">
-                <p class="t">Cadastro de Produtos:</p>
-                
-                <br>
-
-                <div class="input-container">
-                    <input placeholder="Nome" type="text" id="username" >
-
-                </div>
-
-                <div class="descricao-input">
-                    <textarea placeholder="Descrição" id="description" rows="4"></textarea>
-                </div>
-                
-                <div class="botões">
-                    <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> <img class="icones" src="img/cesto-de-lixo.png" alt=""> </button>
-
-                    <div class="space"></div>
-
-                    <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> <img class="icones" src="img/botao-atualizar.png" alt=""> </button>
-
-                    <div class="space"></div>
-                    
-                    <button type="submit" class="submit-button" style="color: rgb(255, 255, 255);" href=""> <img class="icones" src="img/lupa-de-pesquisa.png" alt=""> </button>
-                </div>
-
-
-                <br>
-                <button type="submit" class="button" style="color: rgb(255, 255, 255);" href="">Criar Produto</button>
-                
-            </div> 
-        </div>
-        
+        </main>
     </div>

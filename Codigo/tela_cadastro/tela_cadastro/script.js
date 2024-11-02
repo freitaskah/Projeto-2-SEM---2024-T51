@@ -24,3 +24,14 @@ imageUpload.addEventListener('change', (event) => {
         reader.readAsDataURL(file); // Lê o arquivo como URL de dados
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const splashScreen = document.querySelector('.splash-screen');
+
+    setTimeout(() => {
+        splashScreen.style.opacity = '0'; // Inicia a transição de opacidade
+        setTimeout(() => {
+            splashScreen.style.display = 'none'; // Esconde a tela de splash
+        }, 500); // Espera a transição de opacidade terminar
+    }, 2000); // Duração da tela de splash (2000 ms = 2 segundos)
+});
