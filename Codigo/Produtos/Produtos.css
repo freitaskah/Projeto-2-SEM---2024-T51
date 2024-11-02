@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-
+    background-color: #e6096507;
 }
 
 .img_fundo {
@@ -75,7 +75,7 @@ body{
 
 .nav-links .logo img {
     height: 60px; /* Altura do logo */
-    width: 120%; 
+    width: auto; 
 }
 
 
@@ -95,7 +95,9 @@ body{
 
 
 .left-side {
-    flex: 1;
+
+    text-align: center;
+    flex: 0.45; /* Ajuste a proporção */
     text-align: center;
 }
 
@@ -114,39 +116,46 @@ body{
 
 .right-side {
     flex: 1;
-    padding-left: 20px; /* Espaçamento entre os lados */
-    color: #98594D;
+    padding-left: 10px; /* Espaçamento entre os lados */
+    color: #e60965b0 ;
 }
 
 h2, h3 {
     margin: 10px 0;
     font-family: "Kaushan Script", sans-serif;
+    color: #e60965d8 ;
 }
 
-button {
-    background-color: #98594D; /* Cor do botão */
-    color: white;
-    border: none;
-    padding: 1.5% 5%;
+.content-container button {
+    background-color: #e6096507; /* Torna o fundo do botão transparente */
+    color: #e60965b0; /* Cor do texto do botão (rosa) */
+    border: 1px solid #e60965b0; /* Borda rosa */
+    /*padding: 1.5% 5%;*/
+    padding: 10px;
     cursor: pointer;
     border-radius: 50px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    font-size: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.114);
+    font-size: 75%;
+    width: 17%;
 }
 
 button:hover {
-    background-color: rgba(119, 69, 59, 0.644); /* Cor do botão ao passar o mouse */
+    background-color: #e60965b0; /* Cor do botão ao passar o mouse */
+    color: white;
 }
 
 
 footer {
     background-color: #f8f8f8; 
-    padding: 20px;
-
-    position: relative; /* Para aplicar z-index corretamente */
+    padding-top: 0.5%;
+    position: relative;
     z-index: 10;
-    border: 1px solid #98594D;
+    max-height: 25vh; /* Ajuste a altura máxima conforme necessário */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda a altura máxima */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.114); /* Sombra apenas na parte superior */
 }
+
+
 .footer-container {
     display: flex;
     justify-content: flex-start; /* Alinha as colunas à esquerda */
@@ -154,7 +163,7 @@ footer {
 }
 
 .footer-column {
-    margin-right: 7%;
+
     text-align: left;
 }
 
@@ -162,17 +171,17 @@ footer {
 .footer-column h3 {
     color: #000000; 
     margin-bottom: 10px; 
-    font-size: 16px; 
+    font-size: 1.8vh; 
 }
 
 .footer-column p {
     margin: 5px 0; 
-    font-size: 14px;
+    font-size: 1.7vh;
 }
 .footer-column a {
     color: #000000;
     text-decoration: none; 
-    font-size: 14px; 
+    font-size: 1.7vh; 
 }
 
 .footer-column a:hover {
@@ -183,17 +192,23 @@ footer {
     background-color: #e60965b0; 
     color: white;
     border: none;
-    padding: 8px 35px;
+    padding: 5px 30px;
     cursor: pointer;
-    margin: 10px 0; 
+    margin: 8px 0; 
+    font-size: 1.5vh;
+    border-radius: 50px;
 }
 
 .contact-button:hover {
-    background-color: #e609655b; 
+    background-color: #dd025db0; 
 }
 
 .map {
     margin-top: 10px; /* Margem acima do mapa */
+    box-shadow: none;
+    border-radius: 20%;
+    height: 30%;
+    width: 65%;
 }
 
 html, body {
@@ -201,6 +216,7 @@ html, body {
     margin: 0; 
     display: flex;
     flex-direction: column; /* Organiza os filhos em coluna */
+    
 }
 
 
