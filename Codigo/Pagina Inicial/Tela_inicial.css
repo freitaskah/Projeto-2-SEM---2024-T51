@@ -7,20 +7,45 @@
 }
 
 body {
-    font-family: Arial, sans-serif; 
+   
     background-color: #FEEBF1;
 }
 
 /* NAV */
 
+
+
 .parte1 {
-    background-image: url(Imagem/Bolo.png);
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    z-index: 1; /* Garante que o conteúdo esteja acima do background */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
     position: relative; 
     height: 100vh; 
     overflow: hidden; 
+}
+
+
+.parte1::before {
+    content: '';
+    position: absolute;
+    height: 100vh; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Imagem/Bolo.png');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+
+
+h1, h3 {
+    font-family: "Kaushan Script", sans-serif;
 }
 
 .parte1::after {
@@ -51,11 +76,11 @@ body {
 }
 
 .parte1 .texto {
-    width: 17%;
+    width: 18%;
     color: #fff;
     margin-left: 10%;
     margin-top: 2%; 
-    font-size: 2vh;
+    font-size: 2.3vh;
 }
 
 
@@ -98,10 +123,11 @@ body {
     justify-content: center;
     margin: auto;
     display: flex; 
-    font-size: 75px;
+    font-size: 9vh;
     color: #E60965;
     margin-bottom: 1.5%;
     margin-top: 1.5%;
+    opacity: 0.6;
 }
 
 /* OPÇÕES */
@@ -218,8 +244,8 @@ body {
     height: 90vh; 
     overflow: hidden; 
     margin-top: 7%;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+  
 }
 
 .Banner::before {
@@ -231,6 +257,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.6); 
     z-index: 1;
+
 }
 
 .sobre1 {
@@ -289,23 +316,48 @@ body {
     margin-top: 150px;
 }
 
+.style_video {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Adiciona um espaço em cima e embaixo, se necessário */
+
+}
+
+
+.video {
+    width: 55%; /* Altera para a largura desejada */
+    height: auto; /* Mantém a proporção do vídeo */
+    max-width: 100vw; /* Define um limite máximo de largura se necessário */
+    display: block; /* Centraliza o vídeo se necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+
+}
+
+
+
 
 footer {
     background-color: #f8f8f8; 
-    padding: 20px;
-
-    position: relative; 
+    padding-top: 0.5%;
+    position: relative;
     z-index: 10;
-    border: 1px solid #98594D;
+    max-height: 25vh; /* Ajuste a altura máxima conforme necessário */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda a altura máxima */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.114); /* Sombra apenas na parte superior */
 }
+
+
 .footer-container {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start; /* Alinha as colunas à esquerda */
 
 }
 
 .footer-column {
-    margin-right: 7%;
+
     text-align: left;
 }
 
@@ -313,17 +365,17 @@ footer {
 .footer-column h3 {
     color: #000000; 
     margin-bottom: 10px; 
-    font-size: 16px; 
+    font-size: 1.8vh; 
 }
 
 .footer-column p {
     margin: 5px 0; 
-    font-size: 14px;
+    font-size: 1.7vh;
 }
 .footer-column a {
     color: #000000;
     text-decoration: none; 
-    font-size: 14px; 
+    font-size: 1.7vh; 
 }
 
 .footer-column a:hover {
@@ -334,23 +386,23 @@ footer {
     background-color: #e60965b0; 
     color: white;
     border: none;
-    padding: 8px 35px;
+    padding: 5px 30px;
     cursor: pointer;
-    margin: 10px 0; 
+    margin: 8px 0; 
+    font-size: 1.5vh;
+    border-radius: 50px;
 }
 
 .contact-button:hover {
-    background-color: #e609655b; 
+    background-color: #dd025db0; 
 }
 
 .map {
-    margin-top: 10px; 
+    margin-top: 10px; /* Margem acima do mapa */
+    box-shadow: none;
+    border-radius: 20%;
+    height: 30%;
+    width: 65%;
 }
-
-footer h3,
-footer p {
-    color: black; 
-}
-
 
 
