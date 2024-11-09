@@ -10,3 +10,12 @@ var swiper = new Swiper(".swiper", {
     },
     keyboard: true,
   });
+
+  window.onload = () => {
+    setTimeout(() => {
+      document.querySelector('.splash-screen').classList.add('hide');
+    }, 1000); 
+  };
+  
+
+  
