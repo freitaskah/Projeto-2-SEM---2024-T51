@@ -16,6 +16,8 @@ var swiper = new Swiper(".swiper", {
       document.querySelector('.splash-screen').classList.add('hide');
     }, 1000); 
   };
+
+  
   
 
   

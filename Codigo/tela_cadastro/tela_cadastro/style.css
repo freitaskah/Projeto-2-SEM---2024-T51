@@ -255,7 +255,7 @@ body {
 
 
 .splash-screen {
-    background-image: url(img/logo_zoom.png);
+    background-image: url(img/logo_zoom.png)
     opacity: 0.5;
     position: fixed; /* Para cobrir toda a tela */
     top: 0;

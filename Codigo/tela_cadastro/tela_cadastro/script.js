@@ -35,3 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // Espera a transição de opacidade terminar
     }, 2000); // Duração da tela de splash (2000 ms = 2 segundos)
 });
+
+
