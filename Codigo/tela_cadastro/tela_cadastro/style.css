@@ -11,8 +11,8 @@ body {
     display: flex; /* Usar flexbox */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-    min-height: 100vh; /* Garante que a altura mínima do corpo seja a altura da janela */
-    background-color: #f0f0f0; /* Opcional: cor de fundo para melhor visualização */
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
 }
 
 
@@ -255,7 +255,7 @@ body {
 
 
 .splash-screen {
-    background-image: url(img/logo_zoom.png);
+    background-image: url(img/logo_zoom.png)
     opacity: 0.5;
     position: fixed; /* Para cobrir toda a tela */
     top: 0;
@@ -267,7 +267,6 @@ body {
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
     z-index: 999; /* Fica acima de outros conteúdos */
-    opacity: 1; /* Opacidade inicial */
     transition: opacity 0.5s ease; /* Transição suave da opacidade */
 }
 
