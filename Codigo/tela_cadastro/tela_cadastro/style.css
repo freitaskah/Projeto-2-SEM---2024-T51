@@ -255,19 +255,19 @@ body {
 
 
 .splash-screen {
-    background-image: url(img/logo_zoom.png)
-    opacity: 0.5;
-    position: fixed; /* Para cobrir toda a tela */
+    background-image: url(img/logo_zoom.png);
+    opacity: 1;
+    position: fixed; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #f0f0f0; /* Cor de fundo da tela de transição */
+    background-color: #f0f0f0;
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    z-index: 999; /* Fica acima de outros conteúdos */
-    transition: opacity 0.5s ease; /* Transição suave da opacidade */
+    align-items: center; 
+    justify-content: center; 
+    z-index: 999; 
+    transition: opacity 0.5s ease; 
 }
 
 .splash-logo {
